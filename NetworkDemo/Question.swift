@@ -8,7 +8,11 @@
 
 import Foundation
 
+struct StackOverflowResponse {
+    let item: [Question]?
+}
+
 struct Question {
     let title: String?
-    let score: Int? 
+    let score: Int?
 }

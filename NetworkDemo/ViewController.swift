@@ -27,6 +27,7 @@ class ViewController: UIViewController {
     }
     
     func setupTableView() {
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         tableView.delegate = self
         tableView.dataSource = self
     }
@@ -69,11 +70,19 @@ extension ViewController: UITableViewDelegate {
 // MARK: - UITableViewDataSource
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        guard let questions = questions else { return 0 }
+        return questions.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        guard let questions = questions else { return UITableViewCell() }
+
+        let cellIdentifier = "Cell"
+        var tableViewCell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
+        tableViewCell.textLabel?.text = questions[indexPath.row].title
+        
+        
+        return tableViewCell
     }
     
     

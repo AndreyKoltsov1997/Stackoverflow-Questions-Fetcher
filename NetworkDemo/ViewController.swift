@@ -35,10 +35,20 @@ class ViewController: UIViewController {
         DispatchQueue.global().async {
             self.stackoverflowService.requestQuestions(completion: { [weak self] (questions, error) in
                 if let error = error {
-                    // todo: handle error here
+                    DispatchQueue.main.async {
+                        self.showAlert(error: error)
+                    }
+                } else {
+                    
                 }
             })
         }
+    }
+    
+    func showAlert(error: Error) {
+        let alert = UIAlertController(title: error.localizedDescription, message: nil, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(alert, animated: true)
     }
 
 }

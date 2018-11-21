@@ -12,6 +12,14 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    // Dependencies
+    private let stackoverflowService: StackOverflowService = StackOverflowService(session: URLSession.shared) // we're using shared session here
+    
+    // Private
+    
+    private var questions: [Question]?
+    
+    // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
@@ -21,9 +29,17 @@ class ViewController: UIViewController {
     func setupTableView() {
         tableView.delegate = self
         tableView.dataSource = self
-        
     }
-
+    
+    private func loadQuestions() {
+        DispatchQueue.global().async {
+            self.stackoverflowService.requestQuestions(completion: { [weak self] (questions, error) in
+                if let error = error {
+                    // todo: handle error here
+                }
+            })
+        }
+    }
 
 }
 

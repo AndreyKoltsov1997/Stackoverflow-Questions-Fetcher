@@ -9,7 +9,7 @@
 import Foundation
 
 protocol IStackOverflowService {
-    func requestQuestions(completion: @escaping (StackOverflowResponse?, Error?) -> Void)
+    func requestQuestions(completion: @escaping ([Question]?, Error?) -> Void)
 }
 
 // "final" for optimization purposes. It means we can't inherit from it
@@ -26,7 +26,7 @@ final class StackOverflowService: IStackOverflowService {
     }
     
     // MARK: - IStackOverflowService
-    func requestQuestions(completion: @escaping (StackOverflowResponse?, Error?) -> Void) {
+    func requestQuestions(completion: @escaping ([Question]?, Error?) -> Void) {
         guard let url = URL(string: urlString) else {
             fatalError()
         }
@@ -37,6 +37,7 @@ final class StackOverflowService: IStackOverflowService {
                 completion(nil, error)
             } else if let data = data {
                 let stackoverflowResponse = try? JSONDecoder().decode(StackOverflowResponse.self, from: data)
+                completion(stackoverflowResponse?.items, nil)
             }
         }
         dataTask.resume() // NOTE: Make sure to call this

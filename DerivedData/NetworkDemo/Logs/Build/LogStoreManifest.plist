@@ -35,6 +35,35 @@
 			<key>uniqueIdentifier</key>
 			<string>04A6AA13-5E9A-4049-AEA0-5EE7780C6D37</string>
 		</dict>
+		<key>5C433857-CF5B-4232-B305-012FEF14D785</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>5C433857-CF5B-4232-B305-012FEF14D785.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>NetworkDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NetworkDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build NetworkDemo</string>
+			<key>timeStartedRecording</key>
+			<real>564512112.86604095</real>
+			<key>timeStoppedRecording</key>
+			<real>564512114.924492</real>
+			<key>title</key>
+			<string>Build NetworkDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>5C433857-CF5B-4232-B305-012FEF14D785</string>
+		</dict>
 		<key>67A01380-0C04-4E2C-A5C7-6F1BD690736C</key>
 		<dict>
 			<key>className</key>

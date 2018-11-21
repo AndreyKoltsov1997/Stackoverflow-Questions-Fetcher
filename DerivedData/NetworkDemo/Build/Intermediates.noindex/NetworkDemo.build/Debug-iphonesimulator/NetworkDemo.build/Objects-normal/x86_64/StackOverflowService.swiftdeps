@@ -10,11 +10,15 @@ provides-member:
 - ["11NetworkDemo20StackOverflowServiceC", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "!="
 - "AssignmentPrecedence"
+- "Error"
 - !private "FloatLiteralType"
 - "IStackOverflowService"
 - !private "IntegerLiteralType"
+- !private "JSONDecoder"
 - "Question"
+- !private "StackOverflowResponse"
 - "StackOverflowService"
 - "StringLiteralType"
 - !private "URL"
@@ -25,35 +29,60 @@ depends-top-level:
 depends-member:
 - ["SK", "init"]
 - ["SK", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "dataTask"]
 - ["s7CVarArgP", "init"]
 - ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "resume"]
 - ["Sl", "init"]
 - ["Sl", "init"]
 - ["SL", "init"]
 - ["SL", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "dataTask"]
 - ["s28CustomDebugStringConvertibleP", "init"]
 - ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "resume"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - ["s29CustomPlaygroundQuickLookableP", "init"]
 - ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - ["s17CustomReflectableP", "init"]
 - ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "dataTask"]
 - ["s23CustomStringConvertibleP", "init"]
 - ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "resume"]
+- !private ["Se", "_getBuiltinLogicValue"]
 - ["Se", "init"]
 - ["Se", "init"]
+- !private ["Se", "items"]
+- !private ["SE", "_getBuiltinLogicValue"]
 - ["SE", "init"]
 - ["SE", "init"]
+- !private ["SE", "items"]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "dataTask"]
 - ["SQ", "init"]
 - ["SQ", "init"]
+- !private ["SQ", "resume"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - ["s26ExpressibleByStringLiteralP", "init"]
 - ["s26ExpressibleByStringLiteralP", "init"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "dataTask"]
 - ["SH", "init"]
 - ["SH", "init"]
+- !private ["SH", "resume"]
+- ["11NetworkDemo21IStackOverflowServiceP", "Error"]
+- !private ["11NetworkDemo21IStackOverflowServiceP", "JSONDecoder"]
 - ["11NetworkDemo21IStackOverflowServiceP", "Question"]
+- !private ["11NetworkDemo21IStackOverflowServiceP", "StackOverflowResponse"]
 - !private ["11NetworkDemo21IStackOverflowServiceP", "URL"]
 - !private ["11NetworkDemo21IStackOverflowServiceP", "URLRequest"]
 - ["11NetworkDemo21IStackOverflowServiceP", "Void"]
@@ -62,16 +91,30 @@ depends-member:
 - ["11NetworkDemo21IStackOverflowServiceP", "requestQuestions"]
 - !private ["11NetworkDemo21IStackOverflowServiceP", "session"]
 - !private ["11NetworkDemo21IStackOverflowServiceP", "urlString"]
+- !private ["10Foundation11JSONDecoderC", "decode"]
+- !private ["10Foundation11JSONDecoderC", "init"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - ["s25LosslessStringConvertibleP", "init"]
 - ["s25LosslessStringConvertibleP", "init"]
 - ["s10MirrorPathP", "init"]
 - ["s10MirrorPathP", "init"]
+- !private ["So9NSCopyingP", "resume"]
+- !private ["So8NSObjectC", "dataTask"]
+- !private ["So8NSObjectC", "resume"]
+- !private ["So8NSObjectP", "dataTask"]
+- !private ["So8NSObjectP", "resume"]
+- !private ["So19NSProgressReportingP", "resume"]
 - ["Sm", "init"]
 - ["Sm", "init"]
 - !private ["10Foundation20ReferenceConvertibleP", "init"]
 - ["ST", "init"]
 - ["ST", "init"]
+- !private ["11NetworkDemo21StackOverflowResponseV", "deinit"]
+- !private ["11NetworkDemo21StackOverflowResponseV", "items"]
+- ["11NetworkDemo20StackOverflowServiceC", "Error"]
+- !private ["11NetworkDemo20StackOverflowServiceC", "JSONDecoder"]
 - ["11NetworkDemo20StackOverflowServiceC", "Question"]
+- !private ["11NetworkDemo20StackOverflowServiceC", "StackOverflowResponse"]
 - !private ["11NetworkDemo20StackOverflowServiceC", "URL"]
 - !private ["11NetworkDemo20StackOverflowServiceC", "URLRequest"]
 - ["11NetworkDemo20StackOverflowServiceC", "URLSession"]
@@ -94,6 +137,10 @@ depends-member:
 - ["s20TextOutputStreamableP", "init"]
 - !private ["10Foundation3URLV", "init"]
 - !private ["10Foundation10URLRequestV", "init"]
+- !private ["So12NSURLSessionC", "dataTask"]
+- !private ["So20NSURLSessionDataTaskC", "resume"]
+- !private ["So16NSURLSessionTaskC", "resume"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
@@ -105,12 +152,16 @@ depends-member:
 - !private ["s34_ExpressibleByFileReferenceLiteralP", "init"]
 - ["s33_ExpressibleByStringInterpolationP", "init"]
 - ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dataTask"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "resume"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - ["s21_ObjectiveCBridgeableP", "init"]
 - ["s21_ObjectiveCBridgeableP", "init"]
 - ["s16_SwiftStringViewP", "init"]
 - ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - "SK"
+- !private "Sb"
 - "s7CVarArgP"
 - "Sl"
 - "SL"
@@ -121,16 +172,23 @@ depends-nominal:
 - "Se"
 - "SE"
 - "SQ"
+- !private "s27ExpressibleByBooleanLiteralP"
 - "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - "s26ExpressibleByStringLiteralP"
 - "s33ExpressibleByUnicodeScalarLiteralP"
 - "SH"
 - "11NetworkDemo21IStackOverflowServiceP"
+- !private "10Foundation11JSONDecoderC"
 - "s25LosslessStringConvertibleP"
 - "s10MirrorPathP"
+- !private "So9NSCopyingP"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "So19NSProgressReportingP"
 - "Sm"
 - !private "10Foundation20ReferenceConvertibleP"
 - "ST"
+- !private "11NetworkDemo21StackOverflowResponseV"
 - "11NetworkDemo20StackOverflowServiceC"
 - !private "s12StaticStringV"
 - "SS"
@@ -139,12 +197,17 @@ depends-nominal:
 - "s20TextOutputStreamableP"
 - !private "10Foundation3URLV"
 - !private "10Foundation10URLRequestV"
+- !private "So12NSURLSessionC"
+- !private "So20NSURLSessionDataTaskC"
+- !private "So16NSURLSessionTaskC"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - "s34_ExpressibleByBuiltinStringLiteralP"
 - "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s34_ExpressibleByFileReferenceLiteralP"
 - "s33_ExpressibleByStringInterpolationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
 - "s21_ObjectiveCBridgeableP"
 - "s16_SwiftStringViewP"
 depends-dynamic-lookup:
@@ -173,4 +236,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "125157de52dbdd385828490918f8d49e"
+interface-hash: "caa447dbb6ad3fab7118439390e7704b"

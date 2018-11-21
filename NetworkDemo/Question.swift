@@ -9,7 +9,7 @@
 import Foundation
 
 struct StackOverflowResponse: Codable {
-    let item: [Question]?
+    let items: [Question]?
 }
 
 struct Question: Codable {

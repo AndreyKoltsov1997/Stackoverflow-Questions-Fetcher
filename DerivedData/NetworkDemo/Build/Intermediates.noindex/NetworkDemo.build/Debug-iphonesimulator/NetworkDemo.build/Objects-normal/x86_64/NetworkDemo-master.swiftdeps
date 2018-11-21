@@ -1,8 +1,8 @@
 version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
 options: "bc394ea3bf48e6629750aad2288b4605"
-build_time: [1542818897, 333046000]
+build_time: [1542819312, 945569000]
 inputs:
   "/Users/Andrey/Developer/NetworkDemo/NetworkDemo/ViewController.swift": [1542818897, 0]
-  "/Users/Andrey/Developer/NetworkDemo/NetworkDemo/Question.swift": [1542818639, 0]
-  "/Users/Andrey/Developer/NetworkDemo/NetworkDemo/StackOverflowService.swift": [1542818897, 0]
+  "/Users/Andrey/Developer/NetworkDemo/NetworkDemo/Question.swift": [1542819312, 0]
+  "/Users/Andrey/Developer/NetworkDemo/NetworkDemo/StackOverflowService.swift": [1542819312, 0]
   "/Users/Andrey/Developer/NetworkDemo/NetworkDemo/AppDelegate.swift": [1542817793, 0]

@@ -6,7 +6,7 @@
 	<integer>9</integer>
 	<key>logs</key>
 	<dict>
-		<key>D34414A6-F0EC-4463-9FCE-47C44ABFEA44</key>
+		<key>D964F415-2FD9-421A-A16F-99AF0707FC33</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,19 +15,19 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
 			<key>fileName</key>
-			<string>D34414A6-F0EC-4463-9FCE-47C44ABFEA44.xcactivitylog</string>
+			<string>D964F415-2FD9-421A-A16F-99AF0707FC33.xcactivitylog</string>
 			<key>highLevelStatus</key>
-			<string>E</string>
+			<string>W</string>
 			<key>signature</key>
 			<string>NetworkDemo-dgkieighsjgifvhasqtjjyorxslb</string>
 			<key>timeStartedRecording</key>
-			<real>564511304.31176198</real>
+			<real>564511697.31901002</real>
 			<key>timeStoppedRecording</key>
-			<real>564511305.00156105</real>
+			<real>564511703.09907603</real>
 			<key>title</key>
 			<string>Build target NetworkDemo</string>
 			<key>uniqueIdentifier</key>
-			<string>D34414A6-F0EC-4463-9FCE-47C44ABFEA44</string>
+			<string>D964F415-2FD9-421A-A16F-99AF0707FC33</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>

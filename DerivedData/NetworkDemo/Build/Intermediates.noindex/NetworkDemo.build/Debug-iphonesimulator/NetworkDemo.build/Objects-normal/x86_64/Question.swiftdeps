@@ -1,11 +1,31 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "StackOverflowResponse"
+- "Question"
 provides-nominal:
+- "11NetworkDemo21StackOverflowResponseV"
+- "11NetworkDemo8QuestionV"
 provides-member:
+- ["11NetworkDemo21StackOverflowResponseV", ""]
+- ["11NetworkDemo8QuestionV", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "Int"
+- "Question"
+- "StackOverflowResponse"
+- "String"
 depends-member:
+- ["11NetworkDemo8QuestionV", "Int"]
+- ["11NetworkDemo8QuestionV", "String"]
+- ["11NetworkDemo8QuestionV", "init"]
+- ["11NetworkDemo8QuestionV", "score"]
+- ["11NetworkDemo8QuestionV", "title"]
+- ["11NetworkDemo21StackOverflowResponseV", "Question"]
+- ["11NetworkDemo21StackOverflowResponseV", "init"]
+- ["11NetworkDemo21StackOverflowResponseV", "item"]
 depends-nominal:
+- "11NetworkDemo8QuestionV"
+- "11NetworkDemo21StackOverflowResponseV"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
@@ -32,4 +52,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "5bf39d8b5f0094ca83c744a0da4fb204"
+interface-hash: "d52fbfb0f12a7cb07a4f1cd310148513"

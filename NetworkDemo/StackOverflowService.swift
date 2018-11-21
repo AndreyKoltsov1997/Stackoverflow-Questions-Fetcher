@@ -9,11 +9,13 @@
 import Foundation
 
 protocol IStackOverflowService {
-    func requestQuestions(completion: ([]) -> Void)
+    func requestQuestions(completion: @escaping (StackOverflowResponse?, Error?) -> Void)
 }
 
 // "final" for optimization purposes. It means we can't inherit from it
 final class StackOverflowService: IStackOverflowService {
+    
+    private let urlString = "https://api.stackexchange.com/2.2/questions?order=desc&sort=votes&site=stackoverflow"
     
     // Dependencies
     let session: URLSession
@@ -21,5 +23,22 @@ final class StackOverflowService: IStackOverflowService {
     // MARK: - Init
     init(session: URLSession) {
         self.session = session
+    }
+    
+    // MARK: - IStackOverflowService
+    func requestQuestions(completion: @escaping (StackOverflowResponse?, Error?) -> Void) {
+        guard let url = URL(string: urlString) else {
+            fatalError()
+        }
+        let request = URLRequest(url: url)
+        let dataTask = session.dataTask(with: request) { (data, response, error) in
+            
+            if error != nil {
+                completion(nil, error)
+            } else if let data = data {
+                let stackoverflowResponse = try? JSONDecoder().decode(StackOverflowResponse.self, from: data)
+            }
+        }
+        dataTask.resume() // NOTE: Make sure to call this
     }
 }

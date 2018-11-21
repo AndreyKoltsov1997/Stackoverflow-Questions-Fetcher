@@ -8,11 +8,11 @@
 
 import Foundation
 
-struct StackOverflowResponse {
+struct StackOverflowResponse: Codable {
     let item: [Question]?
 }
 
-struct Question {
+struct Question: Codable {
     let title: String?
     let score: Int?
 }

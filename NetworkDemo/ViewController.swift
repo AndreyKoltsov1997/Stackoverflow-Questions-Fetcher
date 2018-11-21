@@ -11,7 +11,6 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    static let urlString = "https://api.stackexchange.com/2.2/questions?order=desc&sort=votes&site=stackoverflow"
     
     override func viewDidLoad() {
         super.viewDidLoad()

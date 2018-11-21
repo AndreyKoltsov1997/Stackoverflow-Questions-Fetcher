@@ -35,6 +35,35 @@
 			<key>uniqueIdentifier</key>
 			<string>04A6AA13-5E9A-4049-AEA0-5EE7780C6D37</string>
 		</dict>
+		<key>67A01380-0C04-4E2C-A5C7-6F1BD690736C</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>67A01380-0C04-4E2C-A5C7-6F1BD690736C.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>NetworkDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NetworkDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build NetworkDemo</string>
+			<key>timeStartedRecording</key>
+			<real>564511697.234815</real>
+			<key>timeStoppedRecording</key>
+			<real>564511703.11465096</real>
+			<key>title</key>
+			<string>Build NetworkDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>67A01380-0C04-4E2C-A5C7-6F1BD690736C</string>
+		</dict>
 		<key>8C01BB60-09CC-4247-9EC6-DE712210BEDA</key>
 		<dict>
 			<key>className</key>
@@ -92,6 +121,35 @@
 			<string>Build NetworkDemo</string>
 			<key>uniqueIdentifier</key>
 			<string>CD6667A5-85BD-404D-9E97-122FB33103BF</string>
+		</dict>
+		<key>ED1CA743-67FC-440E-A1F9-4096219F8E8A</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>ED1CA743-67FC-440E-A1F9-4096219F8E8A.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>NetworkDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NetworkDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build NetworkDemo</string>
+			<key>timeStartedRecording</key>
+			<real>564511439.21346295</real>
+			<key>timeStoppedRecording</key>
+			<real>564511439.82580495</real>
+			<key>title</key>
+			<string>Build NetworkDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>ED1CA743-67FC-440E-A1F9-4096219F8E8A</string>
 		</dict>
 	</dict>
 </dict>

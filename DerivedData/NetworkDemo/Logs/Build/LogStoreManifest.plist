@@ -6,6 +6,35 @@
 	<integer>9</integer>
 	<key>logs</key>
 	<dict>
+		<key>02029FD7-F21C-4ACE-BD84-6BEDECADDDEC</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>02029FD7-F21C-4ACE-BD84-6BEDECADDDEC.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>NetworkDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NetworkDemo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build NetworkDemo</string>
+			<key>timeStartedRecording</key>
+			<real>564512608.85573602</real>
+			<key>timeStoppedRecording</key>
+			<real>564512611.72155905</real>
+			<key>title</key>
+			<string>Build NetworkDemo</string>
+			<key>uniqueIdentifier</key>
+			<string>02029FD7-F21C-4ACE-BD84-6BEDECADDDEC</string>
+		</dict>
 		<key>04A6AA13-5E9A-4049-AEA0-5EE7780C6D37</key>
 		<dict>
 			<key>className</key>

@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
-        // Do any additional setup after loading the view, typically from a nib.
+        loadQuestions()
     }
     
     func setupTableView() {
@@ -36,10 +36,13 @@ class ViewController: UIViewController {
             self.stackoverflowService.requestQuestions(completion: { [weak self] (questions, error) in
                 if let error = error {
                     DispatchQueue.main.async {
-                        self.showAlert(error: error)
+                        self?.showAlert(error: error)
                     }
-                } else {
-                    
+                } else if let questions = questions {
+                    self?.questions = questions
+                    DispatchQueue.main.async {
+                        self?.tableView.reloadData()
+                    }
                 }
             })
         }
